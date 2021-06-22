@@ -28,12 +28,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --setupFiles ./src/setup.ts",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public -o build/storybook",
-    "build-all": "yarn build && yarn build-storybook",
-    "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes"
+    "build-storybook": "build-storybook -s public -o build/storybook"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -52,12 +50,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
-    "@storybook/addon-a11y": "^6.3.0-rc.11",
     "@storybook/addon-essentials": "^6.3.0-rc.11",
-    "@storybook/addon-storyshots": "^6.3.0-rc.11",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.3.0-rc.11",
-    "@storybook/testing-react": "^0.0.17",
     "@types/jest-axe": "^3.5.1",
     "@types/react-hooks-helper": "^1.6.3",
     "@types/react-redux": "^7.1.16",
@@ -65,17 +60,9 @@
     "@types/react-transition-group": "^4.4.1",
     "@types/styled-components": "^5.1.10",
     "babel-loader": "8.1.0",
-    "chromatic": "^5.9.2",
     "jest-axe": "^4.1.0",
     "jest-canvas-mock": "^2.3.1",
-    "msw": "^0.29.0",
-    "msw-storybook-addon": "^1.1.0",
     "react-is": "^17.0.2",
-    "react-test-renderer": "^17.0.2",
-    "storybook-addon-designs": "^6.0.0",
-    "storybook-mobile": "^0.1.32"
-  },
-  "msw": {
-    "workerDirectory": "public"
+    "react-test-renderer": "^17.0.2"
   }
 }

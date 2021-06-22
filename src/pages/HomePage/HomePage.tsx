@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-import { RestaurantsSection } from './components/RestaurantsSection'
 import { CategoriesSection } from './components/CategoriesSection/CategoriesSection'
 import { categories } from '../../stub/categories'
 import { Banner } from './components/Banner'
@@ -15,7 +14,7 @@ export const HomePage = () => {
     <>
       <Banner />
       <Spacing />
-      <RestaurantsSection title="Our favorite picks" />
+      {/** Insert RestaurantsSection here */}
       <Spacing />
       <AwardWinningSection />
       <Spacing />
