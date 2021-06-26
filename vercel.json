@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/storybook",
+      "destination": "/storybook/"
+    },
+    {
+      "source": "/storybook/:asset*",
+      "destination": "/storybook/:asset*"
+    },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
